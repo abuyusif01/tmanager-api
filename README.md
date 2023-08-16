@@ -1,7 +1,3 @@
-I apologize for the oversight. Here's the updated README with the addition of Mocha for testing:
-
----
-
 # Task Manager API
 
 The Task Manager API provides endpoints to manage tasks. This API allows you to create, retrieve, update, and delete tasks.
