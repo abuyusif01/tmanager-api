@@ -1,0 +1,29 @@
+{
+  "name": "tmanager-api",
+  "version": "1.0.0",
+  "description": "backend api for taskmanager",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "python test/test.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abuyusif01/tmanager-api.git"
+  },
+  "keywords": [
+    "nodejs",
+    "taskmanager"
+  ],
+  "author": "abuyusif01",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abuyusif01/tmanager-api/issues"
+  },
+  "homepage": "https://github.com/abuyusif01/tmanager-api#readme",
+  "dependencies": {
+    "sequelize": "^6.32.1"
+  }
+}
