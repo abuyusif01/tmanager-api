@@ -1,6 +1,6 @@
 # Task Manager API
 
-The Task Manager API provides endpoints to manage tasks. This API allows you to create, retrieve, update, and delete tasks.
+A Task Manager API provides endpoints to manage tasks. This API allows you to create, retrieve, update, and delete tasks.
 
 ## Table of Contents
 
