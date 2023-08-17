@@ -66,7 +66,7 @@ The server will start on `http://localhost:3000`.
 ### Endpoints
 
 - `GET /api/tasks`: Get a list of all tasks.
-- `POST /api/tasks`: Create a new task.
+- `POST /api/task`: Create a new task.
 - `GET /api/tasks/:id`: Get a task by its ID.
 - `PATCH /api/tasks/:id`: Update a task by its ID.
 - `DELETE /api/tasks/:id`: Delete a task by its ID.

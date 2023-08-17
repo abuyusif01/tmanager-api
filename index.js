@@ -14,7 +14,7 @@ const app = express();
 app.use(bodyParser.json());
 
 // Routes
-app.use('/api/tasks', taskRoutes); // Mount the task routes under the '/api/tasks' path
+app.use('/api', taskRoutes); // Mount the task routes under the '/api/tasks' path
 
 // Start the server
 const PORT = process.env.PORT || 3000;

@@ -37,7 +37,7 @@ describe('Task API Tests', () => {
         });
     });
 
-    describe('POST /api/tasks', () => {
+    describe('POST /api/task', () => {
         it('should create a new task', async () => {
             const newTaskData = {
                 title: 'Test Task',
@@ -46,7 +46,7 @@ describe('Task API Tests', () => {
             };
 
             const response = await chai.request(app)
-                .post('/api/tasks')
+                .post('/api/task')
                 .send(newTaskData);
 
             expect(response).to.have.status(201);
@@ -67,7 +67,7 @@ describe('Task API Tests', () => {
             };
 
             const response = await chai.request(app)
-                .post('/api/tasks')
+                .post('/api/task')
                 .send(newTaskData);
 
             createdTask = response.body;
@@ -98,7 +98,7 @@ describe('Task API Tests', () => {
             };
 
             const response = await chai.request(app)
-                .post('/api/tasks')
+                .post('/api/task')
                 .send(newTaskData);
 
             createdTask = response.body;
@@ -148,7 +148,7 @@ describe('Task API Tests', () => {
             };
 
             const response = await chai.request(app)
-                .post('/api/tasks')
+                .post('/api/task')
                 .send(newTaskData);
 
             createdTask = response.body;

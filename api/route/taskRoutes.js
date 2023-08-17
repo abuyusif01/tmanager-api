@@ -4,10 +4,10 @@ const taskController = require('../controllers/taskController'); // Corrected pa
 const validateMiddleware = require('../middlewares/validateMiddleware');
 
 // Define routes and associate middleware and controllers
-router.get('/', taskController.getAllTasks);
-router.post('/', validateMiddleware.validateTask, taskController.createTask);
-router.get('/:id', taskController.getTaskById);
-router.patch('/:id', taskController.updateTask);
-router.delete('/:id', taskController.deleteTask);
+router.get('/tasks/', taskController.getAllTasks);
+router.post('/task/', validateMiddleware.validateTask, taskController.createTask);
+router.get('/tasks/:id', taskController.getTaskById);
+router.patch('/tasks/:id', taskController.updateTask);
+router.delete('/tasks/:id', taskController.deleteTask);
 
 module.exports = router;

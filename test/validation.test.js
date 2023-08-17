@@ -13,7 +13,7 @@ describe('Validation Middleware', () => {
         };
 
         const response = await chai.request(app)
-            .post('/api/tasks')
+            .post('/api/task')
             .send(taskData);
 
         expect(response).to.have.status(400);
@@ -29,7 +29,7 @@ describe('Validation Middleware', () => {
         };
 
         const response = await chai.request(app)
-            .post('/api/tasks')
+            .post('/api/task')
             .send(taskData);
 
         expect(response).to.have.status(400);
