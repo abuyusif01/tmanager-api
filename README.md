@@ -7,7 +7,7 @@ The Task Manager API provides endpoints to manage tasks. This API allows you to 
 - [Task Manager API](#task-manager-api)
   - [Table of Contents](#table-of-contents)
   - [Installation](#installation)
-  - [Database Configuration](#database-configuration)
+  - [Configuration](#configuration)
   - [Running the Server](#running-the-server)
   - [API Documentation](#api-documentation)
     - [Endpoints](#endpoints)
@@ -37,22 +37,18 @@ The Task Manager API provides endpoints to manage tasks. This API allows you to 
    npm install
    ```
 
-## Database Configuration
+## Configuration
 
-1. Create a MySQL database for the application.
-2. Configure the database settings in `server/config/config.json`:
+1. Create a `.env` file in the root of the project.
 
-   ```json
-   {
-     "development": {
-       "username": "your_mysql_username",
-       "password": "your_mysql_password",
-       "database": "your_mysql_database",
-       "host": "127.0.0.1",
-       "dialect": "mysql"
-     },
-     // ... other environments (test, production)
-   }
+2. Configure the following environment variables in the `.env` file:
+
+   ```dotenv
+   DB_USERNAME=your_mysql_username
+   DB_PASSWORD=your_mysql_password
+   DB_DATABASE=your_mysql_database
+   DB_HOST=127.0.0.1
+   DB_DIALECT=mysql
    ```
 
 ## Running the Server
